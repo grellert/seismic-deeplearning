@@ -22,7 +22,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
     ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     apt-get install -y zip && \
-    wget --quiet https://github.com/microsoft/seismic-deeplearning/archive/master.zip -O master.zip && \
+    wget --quiet https://github.com/grellert/seismic-deeplearning/archive/master.zip -O master.zip && \
     unzip master.zip && rm master.zip
 
 RUN mv seismic-deeplearning-master seismic-deeplearning && \
